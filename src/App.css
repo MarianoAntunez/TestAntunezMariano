@@ -195,12 +195,14 @@ i {
   padding: 5px;
 }
 
-.notification-settings,
-.time-tracking {
+.notification-settings {
   border: 2px solid #a8abb3;
   padding: 15px 30px;
   margin-top: 20px;
-  border-radius: 25px;
+  border-radius:30px;
+  border-right: 40px solid #007bff;
+  border-top: 40px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .notification-settings .dropdowns .options {
@@ -246,8 +248,7 @@ i {
   gap: 10px;
 }
 
-.notification-settings select,
-.time-tracking select {
+.notification-settings select {
   display: block;
   padding: 13px;
   width: 150px;
@@ -260,6 +261,20 @@ i {
 
 @media (max-width: 768px) {
   .release-notes-container {
+    padding: 10px;
+  }
+
+  .release-notes {
     padding: 0;
+  }
+  .notification-settings {
+    padding: 15px 10px;
+  }
+  .notification-settings select,
+  select {
+    width: 120px;
+  }
+  .notification-settings .dropdowns .options .lab {
+    padding-right: 15px;
   }
 }

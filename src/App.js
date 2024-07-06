@@ -65,7 +65,7 @@ const App = () => {
                       <i class="fa-solid fa-inbox"></i>
                       <div className="lab">
                         <label htmlFor="inbox">Inbox</label>
-                        <small>Default CklickUp's ● recommended setting</small>
+                        <small>Default ● CklickUp's recommended setting</small>
                       </div>
                     </div>
                     <div className="lab2">
@@ -81,7 +81,7 @@ const App = () => {
                       <i class="fa-regular fa-envelope"></i>
                       <div className="lab">
                         <label htmlFor="inbox">Email</label>
-                        <small>Default CklickUp's ● recommended setting</small>
+                        <small>Default ● CklickUp's recommended setting</small>
                       </div>
                     </div>
                     <div className="lab2">
@@ -97,7 +97,7 @@ const App = () => {
                       <i class="fa-solid fa-tv"></i>
                       <div className="lab">
                         <label htmlFor="inbox">Browser</label>
-                        <small>Default CklickUp's ● recommended setting</small>
+                        <small>Default ● CklickUp's recommended setting</small>
                       </div>
                     </div>
                     <div className="lab2">
@@ -110,10 +110,10 @@ const App = () => {
                   </div>
                   <div className="options">
                     <div className="iconOption">
-                      <i class="fa-solid fa-inbox"></i>
+                    <i class="fa-solid fa-mobile-screen"></i>
                       <div className="lab">
                         <label htmlFor="inbox">Mobile</label>
-                        <small>Default CklickUp's ● recommended setting</small>
+                        <small>Default ● CklickUp's recommended setting</small>
                       </div>
                     </div>
                     <div className="lab2">
