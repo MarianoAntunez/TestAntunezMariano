@@ -110,7 +110,7 @@ const App = () => {
                   </div>
                   <div className="options">
                     <div className="iconOption">
-                    <i class="fa-solid fa-mobile-screen"></i>
+                      <i class="fa-solid fa-mobile-screen"></i>
                       <div className="lab">
                         <label htmlFor="inbox">Mobile</label>
                         <small>Default ● CklickUp's recommended setting</small>
@@ -152,7 +152,7 @@ const App = () => {
             <div className="section section3">
               <h3>Redesigned Time Tracking</h3>
               <div className="filters">
-                <p className="Feat">Fix</p>
+                <p className="Feat">Feat</p>
                 <p>Jul 15, 2024</p>
               </div>
               <p className="descriptions">
