@@ -1,0 +1,265 @@
+* {
+  font-family: Inter, sans-serif;
+}
+p {
+  letter-spacing: 1px;
+}
+.release-notes-container {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  padding: 30px 150px;
+}
+
+@media (min-width: 768px) {
+  .release-notes-container {
+    flex-direction: row;
+  }
+}
+
+.release-notes {
+  flex: 3;
+  padding-right: 135px;
+}
+
+.all-release-notes {
+  flex: 1;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .all-release-notes {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  color: #000000;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+i {
+  font-size: 20px;
+  color: #7d879c;
+}
+
+.all-release-notes ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.all-release-notes li {
+  margin-bottom: 10px;
+}
+
+.release h2 {
+  color: #000000;
+}
+
+.sectionFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sectionFilter h2 {
+  font-weight: 500;
+  margin: 0;
+}
+
+.sectionFilter .drop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionFilter .drop select {
+  width: 136px;
+  border-radius: 15px;
+  border-color: #7d879c;
+}
+
+.release hr {
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section1 .descriptions {
+  color: #7d879c;
+  font-size: 13px;
+}
+
+.filters p {
+  margin: 5px 0px;
+  color: #7d879c;
+}
+
+.filters .Feat {
+  background-color: #d3fff5;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #1cb59c !important;
+  font-weight: 600;
+}
+
+.section2 {
+  margin-top: 75px;
+}
+
+.section2 .filters {
+  margin-bottom: 5px;
+}
+
+.section2 .descriptions {
+  color: #7d879c !important;
+  font-size: 13px;
+  margin: 0;
+}
+
+.filters .Fix {
+  background-color: #fff8e5;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #ffb80088;
+  font-weight: 600;
+}
+
+.section img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding: 0px 25px;
+}
+
+.section li {
+  margin: 30px 0;
+  font-weight: 600;
+}
+
+.section3 {
+  margin-top: 75px;
+}
+
+.section3 .filters {
+  margin-bottom: 5px;
+}
+
+.section3 .descriptions {
+  color: #7d879c !important;
+  font-size: 13px;
+  margin: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.releaseNotes-Nav h1 {
+  background-color: #333;
+  margin: 0;
+  padding: 35px;
+  background: linear-gradient(
+    90deg,
+    #0d5287 -14.11%,
+    #187dca 13.97%,
+    #05aace 40.69%,
+    #04d2c6 68.1%,
+    #26e4c7 90.02%,
+    #d3fff5 117.42%
+  );
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.release-notes select {
+  padding: 5px;
+}
+
+.notification-settings,
+.time-tracking {
+  border: 2px solid #a8abb3;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+
+.notification-settings .dropdowns .options {
+  display: flex;
+  justify-content: space-between;
+  border: solid;
+  border-radius: 15px;
+  border: 2px solid #a8abb3;
+  padding: 20px;
+  margin: 10px 0px;
+}
+
+.notification-settings .options .iconOption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.notification-settings .lab2 i {
+  padding: 10px;
+  border: 2px solid #a8abb3;
+  border-radius: 10px;
+}
+
+.notification-settings .dropdowns .options .lab {
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-settings .lab label {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.notification-settings .lab small {
+  color: #7d879c;
+}
+.notification-settings .dropdowns .options .lab2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification-settings select,
+.time-tracking select {
+  display: block;
+  padding: 13px;
+  width: 150px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #7d879c;
+  border: 2px solid;
+  border-color: #a8abb3;
+}
+
+@media (max-width: 768px) {
+  .release-notes-container {
+    padding: 0;
+  }
+}
