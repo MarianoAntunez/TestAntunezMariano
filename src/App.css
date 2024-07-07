@@ -31,8 +31,7 @@ p {
 .release-notes-container {
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
-  padding: 30px 150px;
+  padding: 30px 381px 30px 150px;
 }
 
 @media (min-width: 768px) {
@@ -54,12 +53,29 @@ p {
 @media (min-width: 768px) {
   .all-release-notes {
     margin-top: 0;
+    position: fixed;
+    right: 70px;
+    width: 310px;
   }
   .edit-form .divi {
     width: 310px;
   }
-}
 
+  .all-release-notes {
+    position: absolute;
+    top: auto;
+    transition: transform 0.5s ease, position 0.5s ease;
+    transform: translateY(0px);
+  }
+
+  .all-release-notes.fixed {
+    position: fixed;
+    top: 0;
+    transition: transform 0.5s ease, position 0.5s ease;
+    transform: translateY(15px);
+    z-index: 1000;
+  }
+}
 h3 {
   color: #000000;
   font-size: 23px;

@@ -13,6 +13,13 @@ const App = () => {
           element.classList.add("visible");
         }
       });
+
+      const allReleaseNotes = document.querySelector(".all-release-notes");
+      if (window.scrollY > 140) {
+        allReleaseNotes.classList.add("fixed");
+      } else {
+        allReleaseNotes.classList.remove("fixed");
+      }
     };
 
     window.addEventListener("scroll", mouseScroll);
