@@ -1,6 +1,30 @@
 * {
-  font-family: Inter, sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
+.app-container {
+  position: relative;
+}
+
+.progress-bar {
+  position: absolute;
+  left: 163px;
+  top: 240px;
+  height: 295%;
+  max-width: 100%;
+  width: 3px;
+  background-color: #2dcab1;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  color: #2dcab1;
+  position: absolute;
+  left: -53px;
+  font-size: 25px;
+}
+
 p {
   letter-spacing: 1px;
 }
@@ -30,6 +54,9 @@ p {
 @media (min-width: 768px) {
   .all-release-notes {
     margin-top: 0;
+  }
+  .edit-form .divi {
+    width: 310px;
   }
 }
 
@@ -77,20 +104,34 @@ i {
   gap: 10px;
 }
 
+.sectionFilter .drop small {
+  color: #2b3445;
+}
+
 .sectionFilter .drop select {
   width: 136px;
   border-radius: 15px;
-  border-color: #7d879c;
+  border: 1px solid #7d879c;
+  color: #2b3445;
+  font-weight: 600;
 }
 
 .release hr {
   margin: 0;
+  margin: 0;
+  color: #d7dff6;
+  border: 1px solid;
 }
 
 .filters {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.section1,
+.section2,
+.section3 {
+  margin-left: 55px;
 }
 
 .section1 .descriptions {
@@ -163,17 +204,6 @@ i {
   margin: 0;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .releaseNotes-Nav h1 {
   background-color: #333;
   margin: 0;
@@ -199,10 +229,10 @@ i {
   border: 2px solid #a8abb3;
   padding: 15px 30px;
   margin-top: 20px;
-  border-radius:30px;
+  border-radius: 30px;
   border-right: 40px solid #007bff;
   border-top: 40px solid #007bff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .notification-settings .dropdowns .options {
@@ -213,6 +243,10 @@ i {
   border: 2px solid #a8abb3;
   padding: 20px;
   margin: 10px 0px;
+}
+
+.notification-settings .dropdowns .options .fa-mobile-screen {
+  padding: 0 7px;
 }
 
 .notification-settings .options .iconOption {
@@ -259,7 +293,78 @@ i {
   border-color: #a8abb3;
 }
 
+.edit-form {
+  border: 2px solid #a8abb3;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border-top: 40px solid #7511fa;
+  border-left: 40px solid #7511fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.edit-form .form-group {
+  margin-top: 10px;
+}
+
+.edit-form .form-group label {
+  font-weight: 600;
+}
+
+.edit-form .input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #a8abb3;
+  border-radius: 10px;
+}
+
+.edit-form .input-container i {
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.edit-form small {
+  color: #7d879c;
+  margin-top: 5px;
+}
+
+.edit-form .S-P {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 768px) {
+  .section1,
+  .section2,
+  .section3 {
+    margin-left: 35px;
+  }
+  .progress-bar {
+    left: 20px;
+    top: 205px;
+    height: 300%;
+  }
+
+  .indicator {
+    color: #2dcab1;
+    position: absolute;
+    left: -36px;
+    font-size: 25px;
+  }
   .release-notes-container {
     padding: 10px;
   }
@@ -269,6 +374,8 @@ i {
   }
   .notification-settings {
     padding: 15px 10px;
+    border-right: 30px solid #007bff;
+    border-top: 30px solid #007bff;
   }
   .notification-settings select,
   select {
@@ -276,5 +383,25 @@ i {
   }
   .notification-settings .dropdowns .options .lab {
     padding-right: 15px;
+  }
+  .notification-settings .dropdowns .options .lab2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+  .edit-form {
+    padding: 15px 15px;
+    border-top: 30px solid #7511fa;
+    border-left: 30px solid #7511fa;
+  }
+  .edit-form .S-P {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .all-release-notes {
+    flex: 1;
+    margin-top: 50px;
   }
 }
